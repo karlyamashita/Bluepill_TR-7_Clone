@@ -18,17 +18,17 @@ We've talked for 30-40 minutes and just out of the blue, he asked if I'd like to
 
 Keep in mind that PAC was only a passive component manufacturer and did not sell any electronics besides the Steering Wheel Control interface. They only sold capacitors, inductors, speaker high-low converters.
 
-### SWI-X Steerin Wheel Control interface
+### SWI-X Steering Wheel Control interface
 At the time, PAC had 4 or 5 steering wheel control interface for different vehicles. If i remember, it was the SWI-2, SWI-3, SWI-4, SWI-6?, SWI-7. Some vehicles use analog while other used digital communcation to the radios which is why there we differrent interfaces. 
 So me being a thinker, I decided to combine all those interfaces into one interface. So the SWI-X was born.
 
 I've also created the SWI-RC which controlled Sony and Pioneer radios directly using the analog input on the back of the radios.
 
 ### TR-4
-One project that the Engineer was working on was a module that would take a low voltage and delay for a moment before turning on an output. The idea was that when the factory radio was turned on, the DC voltage on speaker wires would be around 6V.
-There was a need to delay the remote turn going to an afternmarket amplifier else the DC bias from the speaker output going through a hig-low converter would cause the audio to thump throug the aftermaket amplifier. 
-He was using some capacitor/resistor combination along with a mosfet or transistor. However, he could not aget it to work as expected. 
-I told him why don't we just use a PIC12F508 which was a small 8-pin micronctroller. With an 78L05 voltage regulator and few components, I wrote Firmware to delay an output when it sense a voltage between 0.8V-12.8V. So the TR-4 was born.
+One project that the Engineer was working on was a module that would take a low voltage and delay for a moment before turning on an output. The idea was that when the factory radio was turned on, the DC voltage on speaker wires would be around 6V. The factory radio did not have a remote output. So there was a need to take this voltage from the speakers to turn on the aftermarket amplifier. There was a need to delay the remote turn going to an afternmarket amplifier else the DC bias from the speaker output going through a high-low converter would cause the audio to thump throug the aftermaket amplifier and it could a very loud and annoying thump. 
+The Engineer was using some capacitor/resistor combination along with a mosfet or transistor. However, he could not aget it to work as expected. 
+
+I told the Engineer why don't we just use a PIC12F508 which was a small 8-pin micronctroller. With an 78L05 voltage regulator and few components, I wrote Firmware to delay an output when it sense a voltage between 0.8V-12.8V. So the TR-4 was born.
 
 ### TR-7 is born
 So at that time, there was an Engineer which I believe was David Navone whom had many modules that did miscellaneous taks. I decided to take these type of modules and create 1 module that could do it all, plus more.  
@@ -39,8 +39,24 @@ The TR-7 is based off the Microchip PIC12Fxx 8 pin microcontroller. I designed i
 So I designed the instructions. But while doing so, I created 7 more features in the firmware. But we decided to make it a secret feature that was available but not part of the main instructions. 
 We've mentioned we didn't provide tech support for these features, but the features were there.
 
-### Years later
-I'v made many other products including CAN bus interfaces and video integration. I've made PAC what it is today or at least up until 2013. PAC was bought from some investors in 2007 and the main company, Stinger Electronics based in Florida decide to make internal changes. I've mentioned that i probably can't make the move from Santa Ana, CA to Ontario, CA. 
-So weeks later, they laid me off. At that time they had engineers in Florida that continued what I've created. They even tried to create a TR-7 Pro which was not a bad idea. But as of today, the TR-7 Pro in discontinued, lol.
+# Life after
+
+### PAC couldn't afford to let me leave
+I'v made many other products including CAN bus interfaces and video integration. I've made PAC what it is today. PAC was considered one of the top manfuacturers in the after market car audio industry. The only competitor that could stay around is Metra Electronics. PAC was doing extremely well.
+
+At that time, I was making $20 hour. I was looking for another job and the original owner of PAC caught wind of it and sat down with me. They bumped my pay to a little over $35 hour which was a huge raise, i liked it, lol. They even included a bonus which sweetened the deal. A couple years later, same thing, lookig for a change and they could not afford to let me go. So another raise so making $43 hour.  
+
+### PAC was bought 
+PAC was bought from some investors in 2007. The previous owner retired, enjoying life. So the investors and the main office, AAMP of America based in Florida decide to make internal changes in 2013. They bought a bigger warehouse location in Ontario, CA.
+I've mentioned that i probably can't make the move from Santa Ana, CA to Ontario, CA. So weeks later, they laid me off. 
+
+At that time they had engineers in Florida that continued what I've created. They even tried to create a TR-7 Pro which was not a bad idea. But as of today, the TR-7 Pro in discontinued, lol.
 However, the TR-4 and TR-7 still seems to be sold today. :) 
+
+### You're not going to believe this
+So I went to work for Rosen Electronics in Corona, CA and continued writing firmware for CAN bus integration. Several years later, the CEO held a big meeting. In the meeting he said he was selling the company. I kid you not, my first thought was that I hope it's 
+not `AAMP of America`. A few minutes later he said, `AAMP of America`. You got to be effing kidding me!
+
+So the transistion began. My old boss from PAC, the Engineer, became my boss again. Months later, they started to lay off the office people, moved the warehouse inventory to Ontario. Then, they started to lay off the engineers little by little, including me. Then they sold Rosen to AudioVox which I belive is now called VOXX International Corporation. Freaking investors dismantled Rosen and ruined the company image. Just like they did with Peripheral Electonics that was bought around 2005. Peripheral brand disappeared too.
+
 
