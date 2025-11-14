@@ -3,6 +3,7 @@ This project is a clone of the original TR-7 that I created in year 2000-2001.
 
 ### A little bit about me
 I went to college and finished my Electronics classes and microprocessor programming, which was around 1990-1992. At that time I was facinated with car audio and loved how music could boom from a car, lol.  
+
 So instead of looking for an Engineering job, I went looking for a job to be a car audio installer. My first job was at the Good Guys in La Puente, CA. I was there for a couple of years before I went on to work at Pacific Audio and Alarm in Placentia, CA.
 I created an interface at that time to control a Sony radio using the cruise control from a Honda Civic. At that time, steering wheel audio controls were not common unless it was a higher end vehicle. I used Microchip PIC16F84 flash device.
 
@@ -38,6 +39,10 @@ So the TR-7 was born.
 The TR-7 is based off the Microchip PIC12Fxx 8 pin microcontroller. I designed it so that it could be programmed to do any of the tasks with different timing. I had 16 features implemented before my boss said we have to cut it off at some point, lol.
 So I designed the instructions. But while doing so, I created 7 more features in the firmware. But we decided to make it a secret feature that was available but not part of the main instructions. 
 We've mentioned we didn't provide tech support for these features, but the features were there.
+
+### Blue Pill TR-7 clone
+See the WiKi for more information https://github.com/karlyamashita/Bluepill_TR-7_Clone/wiki
+
 
 # Life after
 
